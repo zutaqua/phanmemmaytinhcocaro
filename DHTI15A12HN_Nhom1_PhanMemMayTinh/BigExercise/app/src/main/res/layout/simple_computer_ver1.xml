@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <TextView
+        android:id="@+id/tvExpression"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="end"
+        android:padding="8dp" />
+
+    <!-- Button to go back to Menu -->
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="8dp"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:columnCount="4"
+        android:padding="8dp"
+        android:rowCount="5">
+
+        <!-- Buttons for numbers and operators -->
+
+        <!-- Decimal button -->
+        <Button
+            android:id="@+id/btnSin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="sin"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnCos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="cos"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnTan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="tan"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnCot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="cot"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnAC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="AC"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnDEL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="DEL"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnOpenParenthesis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="("
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnCloseParenthesis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text=")"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnMod"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="mod"
+            android:textColor="@color/black" />
+
+        <!-- +/- button -->
+        <Button
+            android:id="@+id/btnPlusMinus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="+/-"
+            android:textColor="@color/black" />
+
+        <!-- Trigonometric function buttons -->
+
+        <!-- Parenthesis buttons -->
+
+        <!-- Basic operation buttons -->
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="+"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="-"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="7"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="8"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="9"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="x"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="4"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="5"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="6"
+            android:textColor="@color/black" />
+
+        <!-- AC and DEL buttons -->
+
+        <!-- Equals button -->
+
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="/"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="1"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="2"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="3"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnEqual"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E93673"
+            android:padding="8dp"
+            android:text="="
+            android:textColor="@color/black"
+            app:rippleColor="@color/material_dynamic_primary60" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="0"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnDecimal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/material_dynamic_neutral80"
+            android:padding="8dp"
+            android:text="."
+            android:textColor="@color/black" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#E71616"
+        android:padding="8dp"
+        android:text="Menu" />
+
+    <!-- GridLayout for buttons -->
+</LinearLayout>
